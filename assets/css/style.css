@@ -108,6 +108,20 @@ padding: 2.5rem 0;
 .main-nav ul li a{
     font-size: 1.8rem;
     color: #fff;
+    position: relative;
+}
+.main-nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.3s linear;
+
+}
+.main-nav ul li a:hover::before, .main-nav ul li a.active::before {
+width: 100%;
 }
 
 /* header css end  */
@@ -134,19 +148,29 @@ padding: 2.5rem 0;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-
 }
 .banner-txt h1{
     font-size: 6rem;
     color: #fff;
     font-weight: 700;
 }
+.site-banner.sub-banner {
+    height: 500px;
+}
+.sub-banner .banner-txt h1{
+    font-size: 5rem;
+}
+.sub-banner .banner-txt p{
+    font-size: 2.2rem;
+}
 .banner-txt p{
     font-size: 2.5rem;
     color: #fff;
     font-weight: 500;
 }
-
+.close, .toggle{
+    display: none;
+}
 /* banner css end */
 .plan-heading h3 {
     font-size: 4rem;
@@ -197,7 +221,7 @@ padding: 2.5rem 0;
     margin-bottom: 2rem;
 }
 .about-text p {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
 }
 .about-img{
@@ -225,7 +249,7 @@ padding: 2.5rem 0;
     object-fit: cover;
 }
 .link-txt h4 {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
     color: #fff;
     text-align: center;
@@ -304,7 +328,7 @@ height: 100%;
 .accordion-body {
     padding: 15px 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    font-size: 14px;
+    font-size: 1.4rem;
     background: #dfdfdf;
 }
 
@@ -321,7 +345,7 @@ height: 100%;
 
 .accordion-button {
     border-radius: 10px !important;
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 15px 20px;
 }
 
@@ -355,7 +379,7 @@ div#accordionExample {
   }
 
   a.moreless-button, a.read_more {
-    font-size: 16px;
+    font-size: 1.6rem;
     text-transform: uppercase;
     padding: 13px 40px;
     background-color: transparent;
@@ -371,7 +395,7 @@ a.moreless-button:hover, a.read_more:hover{
     color: #000;
 }
 .top-txt p {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
     text-align: center;
 }
@@ -386,13 +410,13 @@ a.moreless-button:hover, a.read_more:hover{
 }
 
 .hotel-text h3 {
-    font-size: 35px;
+    font-size: 3.5rem;
     color: #fff;
     margin-bottom: 20px;
     font-weight: 600;
 }
 .hotel-text p{
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
 }
 .address p{
@@ -404,7 +428,7 @@ a.moreless-button:hover, a.read_more:hover{
     margin-bottom: 1rem;
 }
 .hotel-text {
-    padding: 30px;
+    padding: 3rem;
 }
 .hotel-img {
     height: 100%;
@@ -419,13 +443,43 @@ a.moreless-button:hover, a.read_more:hover{
     margin-top: 50px;
 }
 .disclaimer-text h4 {
-    font-size: 28px;
+    font-size: 2.8rem;
     color: #fff;
     margin-bottom: 15px;
 }
 .disclaimer-text p{
     color: #fff;
-    font-size: 14px;
+    font-size: 1.4rem;
+}
+.hotel-text ul li {
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 10px 0;
+}
+.hotel-text ul li a{
+    color: #fff;
+    text-decoration: underline;
+}
+.privacy-wrap p a{
+    font-weight: 700;
+    color: #fff;
+}
+.privacy-wrap p, .privacy-wrap ul li {
+    font-size: 1.6rem;
+    color: #fff;
+}
+.privacy-wrap ul li{
+    margin: 10px 0;
+}
+.privacy-wrap ul {
+    list-style: disc;
+    margin: 10px 0;
+}
+.privacy-wrap{
+    margin-bottom: 30px;
+}
+.hotel-wrap .row {
+    align-items: center;
 }
 /* sub pages css end  */
 
@@ -443,7 +497,7 @@ footer{
     max-width: 300px;
 }
 .social-link ul li a {
-    font-size: 22px;
+    font-size: 2.2rem;
     height: 50px;
     width: 50px;
     display: flex;
@@ -468,11 +522,11 @@ footer{
 }
 .copy-right p {
     color: #9c9c9c;
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-bottom: 0;
 }
 .footer-links ul li a {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
 }
 .footer-links ul{
