@@ -123,7 +123,11 @@ padding: 2.5rem 0;
 .main-nav ul li a:hover::before, .main-nav ul li a.active::before {
 width: 100%;
 }
-
+.site-header.fixed-header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
 /* header css end  */
 
 
