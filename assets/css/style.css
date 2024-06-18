@@ -479,7 +479,7 @@ a.moreless-button:hover, a.read_more:hover{
     margin-bottom: 30px;
 }
 .hotel-wrap .row {
-    align-items: center;
+    /* align-items: center; */
 }
 /* sub pages css end  */
 
