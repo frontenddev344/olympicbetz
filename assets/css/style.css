@@ -83,6 +83,8 @@ img {
 }
 /* global css end here */
 
+
+
 /* header css start */
 .site-header{
     background-color: #262525;
@@ -129,6 +131,8 @@ width: 100%;
     width: 100%;
 }
 /* header css end  */
+
+
 
 
 /* banner css start  */
@@ -272,7 +276,10 @@ width: 100%;
     gap: 10px;
     position: relative;
 }
-.links-card::before, .links-card::after{
+.links-card a{
+    position: relative;
+}
+.links-card a::before, .links-card a::after{
     content: '';
     position: absolute;
     top: 0;
@@ -285,10 +292,10 @@ width: 100%;
     transition: all 0.3s linear;
 
 }
-.links-card::after{
+.links-card a::after{
     height: 0;
 }
-.links-card:hover::after{
+.links-card:hover a::after{
 height: 100%;
 }
 /* link card css end */
@@ -478,6 +485,7 @@ a.moreless-button:hover, a.read_more:hover{
 .privacy-wrap ul {
     list-style: disc;
     margin: 10px 0;
+    padding-left: 20px;
 }
 .privacy-wrap{
     margin-bottom: 30px;
